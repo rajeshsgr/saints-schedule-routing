@@ -1,0 +1,18 @@
+<div class="container">
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Team</th>
+        <th>Position</th> 
+    </thead>
+    <tbody>
+    <tr *ngFor="let team of teamRoster; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{team.name}}</td>
+        <td>{{team.position}}</td>
+    </tr>
+    </tbody>
+
+    
+</table>
+</div>

@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { MatchScheduleService } from './match-schedule.service';
+import { PlayerRosterService } from './player-roster.service';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MatchScheduleService, PlayerRosterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
